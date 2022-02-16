@@ -1,0 +1,57 @@
+- proje oluşturmak istediğin klasörün pathine terminallde gir.
+
+- git init ile git projesi haline getir.
+
+- dosyalarını oluştur revize et.
+
+- git add ile tüm pathi ya da sadece o dosyayı ekle.
+	* git add /home/pi/Qt
+	* git add test.txt
+
+
+- git commit ile yorum ekle
+	* git commit -m "Yorum satırı"
+
+- git ile branch oluştur.
+	git branch -M main
+
+
+- git remote add origin https://github.com/username/reponame.git
+
+- git üzerinden push et
+	* git push -u origin main
+
+>> Eger token hatası verirse yapılacaklar;
+
+	- GİTHUB a giriş yap 
+	- Settings -> Developer Settings -> Personal Accsess Tokens
+	- Generate New Token
+	- Yetkinliklerini seç 
+		Repo - Delete Repo
+	- git remote set-url origin https://token@github.com/username/reponame.git
+	
+
+- Daha sonra tekrar
+	git add Repopath
+	git commit -m "Yorum"
+	git push -u origin main
+
+
+
+- Yeni branch oluşturma
+
+	git branch branchname
+	git add repopath
+	git commit -m "Yorum"
+	git push -u origin branchname
+
+
+- Branch işlemleri
+
+	Branchi sil            : git branch -d branchname
+	Branchi zorla sil      : git branch -D branchname
+	İsim değiştirme        : git branch -m eskiisim yeniisim
+	Branchler arası geçiş  : git checkout branchname
+
+
+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
